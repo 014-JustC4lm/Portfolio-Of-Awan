@@ -20,7 +20,7 @@ const ProjectCard = ({ project, onClick }) => {
       />
       
       {/* Overlay */}
-          <div className="absolute inset-0 bg-black/60 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 md:p-6">
+          <div className="absolute inset-0 bg-black/30 md:bg-black/60 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 md:p-6">
         <motion.div
           initial={{ y: 0, opacity: 1 }}
           whileInView={{ y: 0, opacity: 1 }}
