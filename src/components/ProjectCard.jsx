@@ -9,13 +9,14 @@ const ProjectCard = ({ project, onClick }) => {
       animate={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 0, scale: 0.9 }}
       transition={{ duration: 0.3 }}
-      className="group relative cursor-pointer overflow-hidden aspect-video bg-gray-200 dark:bg-gray-800"
+      className="group relative cursor-pointer overflow-hidden aspect-video bg-gray-200 dark:bg-gray-800 z-50"
       onClick={() => onClick(project)}
     >
       <img
-        src={getCloudinaryUrl(project.thumbnail, 'c_fill,w_800,h_450,f_auto,q_auto')}
+        src={getCloudinaryUrl(project.thumbnail, 'c_fill,w_600,h_450,f_auto,q_auto')}
         alt={project.title}
         loading="lazy"
+        decoding="async"
         className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.02]"
       />
       

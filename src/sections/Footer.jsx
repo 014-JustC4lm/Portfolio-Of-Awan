@@ -22,7 +22,7 @@ const Footer = () => {
             Instagram
           </a>
           <a 
-            href="https://linkedin.com/in/farrelputra" 
+            href="https://www.linkedin.com/in/farrel-putra-setiawan-492a3631a/" 
             target="_blank" 
             rel="noopener noreferrer"
             className="hover:text-accent transition-colors"

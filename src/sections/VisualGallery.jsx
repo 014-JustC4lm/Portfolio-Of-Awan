@@ -68,7 +68,7 @@ const VisualGallery = () => {
               galleryImages.map((image, index) => (
                   <motion.div
                     key={image.id}
-                    className="snap-center min-w-[75%] sm:min-w-[60%] md:min-w-0 md:w-auto group relative aspect-[4/3] overflow-hidden cursor-pointer bg-gray-200 dark:bg-gray-800 rounded-xl md:rounded-none"
+                    className="snap-center min-w-[75%] sm:min-w-[60%] md:min-w-0 md:w-auto group relative aspect-[4/3] overflow-hidden cursor-pointer bg-gray-200 dark:bg-gray-800 rounded-xl md:rounded-none z-50"
                     onClick={() => openLightbox(image)}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -77,10 +77,11 @@ const VisualGallery = () => {
                   whileHover={{ scale: 1.02 }}
                 >
                   <img
-                    src={getCloudinaryUrl(image.src, 'c_fill,w_600,h_450,f_auto,q_auto')}
+                    src={getCloudinaryUrl(image.src, 'c_fill,w_500,h_375,f_auto,q_auto')}
                     alt={image.alt}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     loading="lazy"
+                    decoding="async"
                   />
 
                   {/* Hover Overlay */}

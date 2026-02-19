@@ -35,7 +35,7 @@ const Navigation = () => {
   return (
     <>
       <nav 
-        className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+        className={`fixed top-0 left-0 w-full z-[100] transition-all duration-300 ${
           isScrolled 
             ? 'bg-base/80 backdrop-blur-md border-b border-border py-2 md:py-4' 
             : 'bg-transparent py-4 md:py-6'
@@ -108,7 +108,7 @@ const Navigation = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.2 }}
-            className="fixed inset-0 z-40 bg-base/95 backdrop-blur-xl flex flex-col items-center justify-center space-y-8 md:hidden"
+            className="fixed inset-0 z-[99] bg-base/95 backdrop-blur-xl flex flex-col items-center justify-center space-y-8 md:hidden"
           >
             {navLinks.map((link) => (
               <button

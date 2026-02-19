@@ -2,6 +2,9 @@ import { ThemeProvider } from './context/ThemeContext';
 import { LanguageProvider } from './context/LanguageContext';
 import Navigation from './components/Navigation';
 
+import CustomCursor from './components/CustomCursor';
+import PageTransition from './components/PageTransition';
+
 // Placeholder section imports - will be replaced as we build them
 import Hero from './sections/Hero';
 import About from './sections/About';
@@ -17,6 +20,8 @@ function App() {
     <ThemeProvider>
       <LanguageProvider>
         <div className="min-h-screen bg-background text-text transition-colors duration-300 overflow-x-hidden">
+          <PageTransition />
+          <CustomCursor />
           <Navigation />
           
           <main>
