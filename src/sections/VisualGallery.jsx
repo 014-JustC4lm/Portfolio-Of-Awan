@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { galleryImages } from '../data/gallery';
 import { getCloudinaryUrl } from '../config/cloudinary';
+import CloudImage from '../components/CloudImage';
 
 const GalleryLightbox = ({ isOpen, image, onClose }) => {
   if (!isOpen || !image) return null;
@@ -43,6 +44,7 @@ const GalleryLightbox = ({ isOpen, image, onClose }) => {
 
 const VisualGallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
+  const [visibleCount, setVisibleCount] = useState(8);
 
   const openLightbox = (image) => {
     setSelectedImage(image);
@@ -53,6 +55,12 @@ const VisualGallery = () => {
     setSelectedImage(null);
     document.body.style.overflow = 'unset';
   };
+
+  const handleLoadMore = () => {
+    setVisibleCount(prev => prev + 8);
+  };
+
+  const visibleImages = galleryImages ? galleryImages.slice(0, visibleCount) : [];
 
   return (
     <>
@@ -65,7 +73,7 @@ const VisualGallery = () => {
           {/* Grid Layout (Mobile: Horizontal Scroll, Desktop: Grid) */}
           <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-4 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-6 md:pb-0 scrollbar-hide">
             {galleryImages && galleryImages.length > 0 ? (
-              galleryImages.map((image, index) => (
+              visibleImages.map((image, index) => (
                   <motion.div
                     key={image.id}
                     className="snap-center min-w-[75%] sm:min-w-[60%] md:min-w-0 md:w-auto group relative aspect-[4/3] overflow-hidden cursor-pointer bg-gray-200 dark:bg-gray-800 rounded-xl md:rounded-none z-50"
@@ -76,12 +84,10 @@ const VisualGallery = () => {
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   whileHover={{ scale: 1.02 }}
                 >
-                  <img
-                    src={getCloudinaryUrl(image.src, 'c_fill,w_500,h_375,f_auto,q_auto')}
+                  <CloudImage
+                    src={image.src}
                     alt={image.alt}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                    loading="lazy"
-                    decoding="async"
+                    className="w-full h-full transition-transform duration-700 group-hover:scale-110"
                   />
 
                   {/* Hover Overlay */}
@@ -96,6 +102,18 @@ const VisualGallery = () => {
               <p className="col-span-full text-center text-textSoft">No gallery images available.</p>
             )}
           </div>
+
+          {/* Load More Button */}
+          {galleryImages && visibleCount < galleryImages.length && (
+            <div className="mt-12 flex justify-center">
+              <button
+                onClick={handleLoadMore}
+                className="px-8 py-3 bg-text text-base hover:bg-accent transition-colors duration-300 font-medium tracking-wide"
+              >
+                Load More Photos
+              </button>
+            </div>
+          )}
         </div>
       </section>
 

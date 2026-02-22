@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { getCloudinaryUrl } from '../config/cloudinary';
+import CloudImage from './CloudImage';
 
 const ProjectCard = ({ project, onClick }) => {
   return (
@@ -12,12 +12,10 @@ const ProjectCard = ({ project, onClick }) => {
       className="group relative cursor-pointer overflow-hidden aspect-video bg-gray-200 dark:bg-gray-800 z-50"
       onClick={() => onClick(project)}
     >
-      <img
-        src={getCloudinaryUrl(project.thumbnail, 'c_fill,w_600,h_450,f_auto,q_auto')}
+      <CloudImage
+        src={project.thumbnail}
         alt={project.title}
-        loading="lazy"
-        decoding="async"
-        className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.02]"
+        className="h-full w-full transition-transform duration-700 group-hover:scale-[1.02]"
       />
       
       {/* Overlay */}

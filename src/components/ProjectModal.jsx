@@ -42,12 +42,27 @@ const ProjectModal = ({ project, onClose }) => {
     return url; // Return original if no match
   };
 
+  const renderTextWithLinks = (text) => {
+    if (!text) return text;
+    const urlRegex = /(https?:\/\/[^\s]+)/g;
+    return text.split(urlRegex).map((part, i) => {
+      if (part.match(urlRegex)) {
+        return (
+          <a key={i} href={part} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">
+            {part}
+          </a>
+        );
+      }
+      return part;
+    });
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="fixed inset-0 z-50 flex items-center justify-center p-4 md:p-8 bg-black/90 backdrop-blur-sm"
+      className="fixed inset-0 z-[110] flex items-center justify-center p-4 md:p-8 bg-black/90 backdrop-blur-sm"
       onClick={onClose}
     >
       <motion.div
@@ -136,7 +151,7 @@ const ProjectModal = ({ project, onClose }) => {
               {project.behindTheScenes && (
                 <div className="bg-surface p-6 border-l-2 border-accent mt-8">
                   <h4 className="font-bold mb-2 uppercase text-xs tracking-wider">Behind The Scenes</h4>
-                  <p className="text-sm italic text-textSecondary">{project.behindTheScenes}</p>
+                  <p className="text-sm italic text-textSecondary">{renderTextWithLinks(project.behindTheScenes)}</p>
                 </div>
               )}
             </div>

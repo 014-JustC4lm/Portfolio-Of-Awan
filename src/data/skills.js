@@ -31,10 +31,10 @@ export const softwareSkills = [
   { 
     name: 'CapCut', 
     icon: RiScissorsCutFill, // Fallback icon for CapCut
-    color: '#000000' // CapCut usually black/white, or gradient. Black is safe for light mode, white for dark.
+    color: 'currentColor' // Inherits from parent, making it black in light mode and white in dark mode.
   },
   { 
-    name: 'DaVinci Resolve', 
+    name: 'DaVinci Resolve (Basic)', 
     icon: SiDavinciresolve, 
     color: '#FF5C5C' // Approximate color
   }

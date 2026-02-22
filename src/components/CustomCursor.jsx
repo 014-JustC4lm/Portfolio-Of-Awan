@@ -31,12 +31,22 @@ const CustomCursor = () => {
       }
     };
 
+    const handleBlur = () => setIsHovering(false); // Can't easily hide it completely without adding more state, but returning to default size and moving it offscreen works
+    const handleMouseLeave = () => {
+      cursorX.set(-100);
+      cursorY.set(-100);
+    };
+
     window.addEventListener('mousemove', moveCursor);
     window.addEventListener('mouseover', handleMouseOver);
+    window.addEventListener('blur', handleBlur);
+    document.addEventListener('mouseleave', handleMouseLeave);
 
     return () => {
       window.removeEventListener('mousemove', moveCursor);
       window.removeEventListener('mouseover', handleMouseOver);
+      window.removeEventListener('blur', handleBlur);
+      document.removeEventListener('mouseleave', handleMouseLeave);
     };
   }, [cursorX, cursorY]);
 
