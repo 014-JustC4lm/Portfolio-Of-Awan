@@ -48,7 +48,7 @@ const ProjectModal = ({ project, onClose }) => {
     return text.split(urlRegex).map((part, i) => {
       if (part.match(urlRegex)) {
         return (
-          <a key={i} href={part} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">
+          <a key={i} href={part} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline break-all">
             {part}
           </a>
         );

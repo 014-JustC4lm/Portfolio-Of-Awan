@@ -3,9 +3,10 @@ import { motion, useMotionValue, useSpring } from 'framer-motion';
 
 const CustomCursor = () => {
   const [isHovering, setIsHovering] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
   const cursorX = useMotionValue(-100);
   const cursorY = useMotionValue(-100);
-  
+
   const springConfig = { damping: 20, stiffness: 400, mass: 0.2 };
   const cursorXSpring = useSpring(cursorX, springConfig);
   const cursorYSpring = useSpring(cursorY, springConfig);
@@ -31,22 +32,31 @@ const CustomCursor = () => {
       }
     };
 
-    const handleBlur = () => setIsHovering(false); // Can't easily hide it completely without adding more state, but returning to default size and moving it offscreen works
+    const handleBlur = () => {
+      setIsHovering(false);
+      setIsVisible(false);
+    };
+    
     const handleMouseLeave = () => {
-      cursorX.set(-100);
-      cursorY.set(-100);
+      setIsVisible(false);
+    };
+
+    const handleMouseEnter = () => {
+      setIsVisible(true);
     };
 
     window.addEventListener('mousemove', moveCursor);
     window.addEventListener('mouseover', handleMouseOver);
     window.addEventListener('blur', handleBlur);
     document.addEventListener('mouseleave', handleMouseLeave);
+    document.addEventListener('mouseenter', handleMouseEnter);
 
     return () => {
       window.removeEventListener('mousemove', moveCursor);
       window.removeEventListener('mouseover', handleMouseOver);
       window.removeEventListener('blur', handleBlur);
       document.removeEventListener('mouseleave', handleMouseLeave);
+      document.removeEventListener('mouseenter', handleMouseEnter);
     };
   }, [cursorX, cursorY]);
 
@@ -58,7 +68,7 @@ const CustomCursor = () => {
           x: cursorXSpring,
           y: cursorYSpring,
           scale: isHovering ? 1.5 : 1,
-          opacity: 1,
+          opacity: isVisible ? 1 : 0,
         }}
         transition={{ duration: 0.2 }}
       />
