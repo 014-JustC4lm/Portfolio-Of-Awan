@@ -22,7 +22,7 @@ const Contact = () => {
           </h2>
           
           <div className="flex flex-col md:flex-row items-center justify-center gap-6">
-            <a href="mailto:awantheonlywan@gmail.com" className="min-w-[200px]">
+            <a href="https://mail.google.com/mail/?view=cm&to=awantheonlywan@gmail.com" target="_blank" rel="noopener noreferrer" className="min-w-[200px]">
               <Button variant="primary" className="w-full">
                 {t('contact.email')}
               </Button>

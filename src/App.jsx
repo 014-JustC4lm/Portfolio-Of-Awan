@@ -14,6 +14,7 @@ import CreativeApproach from './sections/CreativeApproach';
 import VisualGallery from './sections/VisualGallery';
 import Contact from './sections/Contact';
 import Footer from './sections/Footer';
+import OlderPortfolio from './sections/OlderPortfolio';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
             <Portfolio />
             <CreativeApproach />
             <VisualGallery />
+            <OlderPortfolio />
             <Contact />
           </main>
           

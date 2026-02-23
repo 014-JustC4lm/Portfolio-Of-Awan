@@ -1,6 +1,5 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { getCloudinaryUrl } from '../config/cloudinary';
-import { motion } from 'framer-motion';
 
 /**
  * CloudImage - A highly optimized, responsive image component.

@@ -36,6 +36,10 @@ export const translations = {
       title: "My Software Skills",
       subtitle: "Tools I use to bring creative visions to life."
     },
+    olderPortfolio: {
+      label: "From The Archives",
+      title: "Older Portfolio"
+    },
     footer: {
       tagline: siteConfig.tagline_en
     }
@@ -74,6 +78,10 @@ export const translations = {
     skills: {
       title: "Skill Software Saya",
       subtitle: "Alat yang saya gunakan untuk mewujudkan visi kreatif."
+    },
+    olderPortfolio: {
+      label: "Dari Arsip",
+      title: "Portofolio Lama"
     },
     footer: {
       tagline: siteConfig.tagline_id
