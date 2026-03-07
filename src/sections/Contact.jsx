@@ -22,7 +22,7 @@ const Contact = () => {
           </h2>
           
           <div className="flex flex-col md:flex-row items-center justify-center gap-6">
-            <a href="https://mail.google.com/mail/?view=cm&to=awantheonlywan@gmail.com" target="_blank" rel="noopener noreferrer" className="min-w-[200px]">
+            <a href="https://mail.google.com/mail/?view=cm&to=farrelsetiawanworks@gmail.com" target="_blank" rel="noopener noreferrer" className="min-w-[200px]">
               <Button variant="primary" className="w-full">
                 {t('contact.email')}
               </Button>
@@ -35,7 +35,7 @@ const Contact = () => {
           </div>
 
           <p className="mt-16 text-textSoft">
-            Based in Tangerang Selatan, Indonesia. Available for tailored projects worldwide.
+            Based in Tangerang Selatan, Indonesia. Available for collaborative and independent film projects.
           </p>
         </motion.div>
       </div>

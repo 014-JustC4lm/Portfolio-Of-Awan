@@ -17,7 +17,14 @@ const Portfolio = () => {
     ? works 
     : works.filter(p => p.category === activeCategory);
 
-  const visibleProjects = filteredProjects.slice(0, visibleCount);
+  // Sort featured projects to the top
+  const sortedProjects = [...filteredProjects].sort((a, b) => {
+    if (a.featured && !b.featured) return -1;
+    if (!a.featured && b.featured) return 1;
+    return 0; // Keep original order for ties
+  });
+
+  const visibleProjects = sortedProjects.slice(0, visibleCount);
 
   // Reset visible count when category changes
   const handleCategoryChange = (cat) => {

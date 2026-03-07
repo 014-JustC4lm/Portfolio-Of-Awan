@@ -144,9 +144,9 @@ const ProjectModal = ({ project, onClose }) => {
             <div className="flex-1">
               <span className="text-accent uppercase tracking-widest text-sm font-semibold mb-2 block">{project.category}</span>
               <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">{project.title}</h2>
-              <p className="text-textSecondary text-lg leading-relaxed mb-8">
+              <div className="text-textSecondary text-lg leading-relaxed mb-8 whitespace-pre-wrap">
                 {description}
-              </p>
+              </div>
               
               {project.behindTheScenes && (
                 <div className="bg-surface p-6 border-l-2 border-accent mt-8">
