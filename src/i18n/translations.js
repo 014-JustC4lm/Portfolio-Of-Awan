@@ -14,7 +14,7 @@ export const translations = {
     },
     about: {
       title: "About Me",
-      description: "I am a filmmaker and videographer driven by a passion for visual storytelling. I create narrative films that explore emotion and meaning, while also working on real-world productions such as events and documentaries. My approach blends creative direction with technical execution, always aiming to craft visuals that feel cinematic yet authentic.",
+      description: "I am a visual creator driven by a passion for visual storytelling. I create narrative films that explore emotion and meaning, while also working on real-world productions such as events and documentaries. My approach blends creative direction with technical execution, always aiming to craft visuals that feel cinematic yet authentic.",
       role: siteConfig.role_en
     },
     portfolio: {
@@ -57,7 +57,7 @@ export const translations = {
     },
     about: {
       title: "Tentang Saya",
-      description: "Saya adalah seorang pembuat film dan videografer yang didorong oleh passion dalam bercerita melalui visual. Saya menciptakan film naratif yang mengeksplorasi emosi dan makna, sambil juga terlibat dalam produksi nyata seperti acara dan dokumenter. Pendekatan saya menggabungkan arahan kreatif dengan eksekusi teknis, selalu berupaya menciptakan visual yang terasa sinematik namun autentik.",
+      description: "Saya adalah seorang kreator visual yang didorong oleh passion dalam bercerita melalui visual. Saya menciptakan film naratif yang mengeksplorasi emosi dan makna, sambil juga terlibat dalam produksi nyata seperti acara dan dokumenter. Pendekatan saya menggabungkan arahan kreatif dengan eksekusi teknis, selalu berupaya menciptakan visual yang terasa sinematik namun autentik.",
       role: siteConfig.role_id
     },
     portfolio: {

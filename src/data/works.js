@@ -153,7 +153,7 @@ Kontribusi :
 Merancang konsep visual dan naratif iklan komersial parfum secara kreatif hingga penyuntingan. Menggunakan pendekatan sinematografi yang bersih dan elegan untuk menonjolkan karakter produk. Mengarahkan talent untuk demo produk dengan berbagai shot cantik.
 `,
     tools: ["Nikon D3400", "Premiere Pro"],
-    behindTheScenes: null,
+    behindTheScenes: "Alt Link : https://www.instagram.com/lumixor_creative_house/",
       featured: true
   },
 
@@ -176,7 +176,7 @@ Kontribusi :
 Membangun bahasa visual iklan bersama sutradara sejak tahap perencanaan, mengoperasikan kamera selama produksi, dan menyelesaikan proses editing serta color grading di pasca produksi.
 `,
     tools: ["Nikon D3400", "Premiere Pro"],
-    behindTheScenes: null,
+    behindTheScenes: "Alt Link : https://www.instagram.com/lumixor_creative_house/",
       featured: true
   },
 
@@ -199,7 +199,7 @@ Kontribusi :
 Mengonsep pendekatan naratif dan visual secara kreatif, mengarahkan talent dan kru selama produksi berlangsung, serta menangani proses editing pasca produksi.
 `,
     tools: ["Nikon D3400", "Premiere Pro"],
-    behindTheScenes: null,
+    behindTheScenes: "Alt Link : https://www.instagram.com/lumixor_creative_house/",
       featured: true
   },
 
@@ -222,7 +222,7 @@ Kontribusi :
 Mengonsep pendekatan naratif dan visual secara kreatif, mengarahkan talent dan kru selama produksi berlangsung, serta menangani proses editing pasca produksi.
 `,
     tools: ["Nikon D3400", "Premiere Pro"],
-    behindTheScenes: null,
+    behindTheScenes: "Alt Link : https://www.instagram.com/lumixor_creative_house/",
       featured: false
   },
   {
