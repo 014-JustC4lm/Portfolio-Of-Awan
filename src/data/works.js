@@ -71,9 +71,9 @@ Memegang kendali penuh atas seluruh elemen kreatif mulai dari pengembangan ide, 
     title: "Sunyi Yang Berwajah",
     category: "film",
     year: "2026",
-    role: "Director, Writer, Editor",
-    thumbnail: "https://res.cloudinary.com/dj5v96fla/image/upload/v1770986282/ss_mp34ga.png",
-    media: "https://drive.google.com/file/d/1P7OTUmMMzHH9P2A1F8ghx9aRQO4piXYs/preview",
+    role: "Director, Writer, Editor, Colorist",
+    thumbnail: "https://res.cloudinary.com/dj5v96fla/image/upload/v1784222140/16.9_syb_1.jpg_oya2y2.jpg",
+    media: "https://drive.google.com/file/d/17OiCQm5K0W1bld8BkUg5e8lMY6z2T3UD/preview",
     description_en: `Trapped in past trauma and loneliness, a young man attempts to break down the cold wall between him and his sibling, seeking a glimmer of warmth in a house that feels increasingly silent.
 
 Contributions :
