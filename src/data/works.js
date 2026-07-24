@@ -141,7 +141,7 @@ Menjalankan dua peran sekaligus, memastikan kelancaran produksi sebagai Assisten
     year: "2025",
     role: "Director, Editor",
     thumbnail: "https://res.cloudinary.com/dj5v96fla/image/upload/v1770977517/SAVE_20251202_183234_kftyg0.jpg",
-    media: "https://drive.google.com/file/d/19a0hX_edFW0G8n-Y5ShXjoUV4mTCU5bJ/preview",
+    media: "https://drive.google.com/file/d/1AhjSfDAmkeIKJ4BeH_NLGupd91jWnepZ/preview",
     description_en: `Commercial video advertisement for perfume, with a cinematic video concept that displays and showcases the product.
 
 Contributions :
@@ -164,7 +164,7 @@ Merancang konsep visual dan naratif iklan komersial parfum secara kreatif hingga
     year: "2025",
     role: "Director Of Photography, Editor",
     thumbnail: "https://res.cloudinary.com/dj5v96fla/image/upload/v1770977521/WhatsApp_Image_2025-12-02_at_21.54.11_522477a6_fgjrfd.jpg",
-    media: "https://drive.google.com/file/d/1iUlIwrGqzF3ct2MhcqcuNvBPxmumgVIQ/preview",
+    media: "https://drive.google.com/file/d/18z5miJAc2IhKFiTBeVdOQI0X-IjNMoNp/preview",
     description_en: `Commercial video advertisement for perfume, with a cinematic video concept that tells a short narrative story.
 
 Contributions :
@@ -187,7 +187,7 @@ Membangun bahasa visual iklan bersama sutradara sejak tahap perencanaan, mengope
     year: "2025",
     role: "Director, Editor",
     thumbnail: "https://res.cloudinary.com/dj5v96fla/image/upload/v1770984146/pano_rgoglp.png",
-    media: "https://drive.google.com/file/d/1IX3kPlYoT0LBRXbwUPyq1EXY84bHe1FT/preview",
+    media: "https://drive.google.com/file/d/13wxG8E0hLL37seLjcfiR-OImw1TmHXIK/preview",
     description_en: `Commercial video advertisement for sneakers, with a cinematic video concept that tells a short narrative story with elements of absurd comedy.
 
 Contributions :
@@ -210,7 +210,7 @@ Mengonsep pendekatan naratif dan visual secara kreatif, mengarahkan talent dan k
     year: "2025",
     role: "Director, Editor",
     thumbnail: "https://res.cloudinary.com/dj5v96fla/image/upload/v1770984806/ademsari_vf4kq6.png",
-    media: "https://drive.google.com/file/d/1U5eXPwSd0krfRX7VADnm5qLnSvG5-7rC/preview",
+    media: "https://drive.google.com/file/d/1flJ5IDXkRfbcSfm6JGvO3H3Oa27KTLia/preview",
     description_en: `Commercial video advertisement for beverage, with a concept that tells a short narrative story with thriller elements.
 
 Contributions :

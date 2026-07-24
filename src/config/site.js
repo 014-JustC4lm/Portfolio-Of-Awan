@@ -1,5 +1,5 @@
 export const siteConfig = {
-  name: "Farrel Putra Setiawan (Under Maintenance)", // Updated name
+  name: "Farrel Putra Setiawan", // Updated name
   role_en: "Videographer • Editor • Filmmaker",
   role_id: "Videographer • Editor • Filmmaker",
   tagline_en: "Crafting cinematic experiences through visual storytelling.",
