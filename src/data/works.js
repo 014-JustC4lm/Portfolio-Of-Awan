@@ -9,7 +9,17 @@
   year: "2024",
   role: "Your Role",
   thumbnail: "portfolio/projects/thumbnail.jpg",  // ← HANYA path relative!
-  media: "https://www.youtube.com/embed/VIDEO_ID",  // YouTube/Vimeo tetap full URL
+
+  // SINGLE media (string biasa):
+  media: "https://www.youtube.com/embed/VIDEO_ID",
+
+  // MULTI media (array of strings) — gunakan ini untuk fitur "Compiled":
+  // media: [
+  //   "https://www.youtube.com/embed/VIDEO_ID_1",
+  //   "https://drive.google.com/file/d/FILE_ID/preview",
+  //   "https://res.cloudinary.com/IMAGE_URL.jpg",
+  // ],
+
   description_en: `English description of the project...`,
   description_id: `Deskripsi proyek dalam Bahasa Indonesia...`,
   tools: ["Tool 1", "Tool 2", "Tool 3"],
@@ -227,6 +237,20 @@ Mengonsep pendekatan naratif dan visual secara kreatif, mengarahkan talent dan k
   },
   {
     id: 10,
+    title: "RS Fatmawati Reunion Documentation",
+    category: "videography",
+    year: "2026",
+    role: "Videographer, Editor",
+    thumbnail: "https://res.cloudinary.com/dj5v96fla/image/upload/v1785673358/LCH_0756_l357i7.jpg",
+    media: "https://drive.google.com/file/d/1F8kTytwHYh74puseGdccPK_Nry5EvhRl/preview",
+    description_en: `Event documentation video of the RS Fatmawati family reunion. Capturing the warmth of togetherness and memorable moments throughout the gathering.`,
+    description_id: `Video dokumentasi acara reuni keluarga besar RS Fatmawati. Mengabadikan kehangatan kebersamaan dan momen berkesan sepanjang acara berlangsung.`,
+    tools: ["Nikon D5600", "DJI Ronin SC 2"],
+    behindTheScenes: null,
+      featured: false
+  },
+  {
+    id: 11,
     title: "Camera Review",
     category: "videography",
     year: "2025",
@@ -240,7 +264,7 @@ Mengonsep pendekatan naratif dan visual secara kreatif, mengarahkan talent dan k
       featured: false
   },
   {
-    id: 11,
+    id: 12,
     title: "Graduation Documentation",
     category: "videography",
     year: "2025",
@@ -254,11 +278,11 @@ Mengonsep pendekatan naratif dan visual secara kreatif, mengarahkan talent dan k
       featured: false
   },
   {
-    id: 12,
+    id: 13,
     title: "Zyrex Podcast",
     category: "videography",
     year: "2025",
-    role: "Director, Creative Producer",
+    role: "Creative Director, Editor",
     thumbnail: "https://res.cloudinary.com/dj5v96fla/image/upload/v1771073422/aa_z2kh6f.png",
     media: "https://drive.google.com/file/d/1723zBX-DEyTVnwxqjDucyEI9WzWfKw6q/preview",
     description_en: `Podcast on the topic of competition among technology products in Indonesia`,
@@ -268,7 +292,7 @@ Mengonsep pendekatan naratif dan visual secara kreatif, mengarahkan talent dan k
       featured: false
   },
   {
-    id: 13,
+    id: 14,
     title: "Khitan Documentation",
     category: "videography",
     year: "2025",
@@ -282,109 +306,91 @@ Mengonsep pendekatan naratif dan visual secara kreatif, mengarahkan talent dan k
       featured: false
   },
   {
-    id: 14,
-    title: "Theatre Documentation 1",
+    id: 15,
+    title: "Theatre Documentation (Compiled)",
     category: "videography",
     year: "2025",
     role: "Videographer",
     thumbnail: "https://res.cloudinary.com/dj5v96fla/image/upload/v1771074859/LCH_3260-16-9_osnaui.jpg",
-    media: "https://drive.google.com/file/d/1RfNs-k6LXwIHLCOfO-i0HaqIUB8XmUrG/preview",
+    media: ["https://drive.google.com/file/d/1RfNs-k6LXwIHLCOfO-i0HaqIUB8XmUrG/preview",
+      "https://drive.google.com/file/d/13frh6wJGVcqQjfJOPp5jAP0uGLvTHeQY/preview",
+      "https://drive.google.com/file/d/1hTqdLCgTubYne6Kr1N__jb5V1YnDnlm2/preview",
+      "https://drive.google.com/file/d/18rmhqbLDOoaRraXr_A3SCglL8ulQ1Gkp/preview"
+    ],
     description_en: `Documentation of the 2025 East Jakarta Student Theatre Festival for a week.`,
     description_id: `Dokumentasi Festival Teater Pelajar Jakarta Timur 2025 selama satu minggu. `,
     tools: ["Sony A6000", "DJI Ronin SC 2"],
-    behindTheScenes: "Original Link: https://www.instagram.com/reel/DL13yy-BMa9/",
+    behindTheScenes: "Original Link: https://www.instagram.com/reel/DL13yy-BMa9/ - https://www.instagram.com/reel/DL1wWO4B409/  - https://www.instagram.com/reel/DOWHJGaAfPO/ - https://www.instagram.com/reel/DOaaqUYAf0_/",
       featured: false
   },
-  {
-    id: 15,
-    title: "Theatre Documentation 2",
-    category: "videography",
-    year: "2025",
-    role: "Videographer",
-    thumbnail: "https://res.cloudinary.com/dj5v96fla/image/upload/v1771074859/LCH_3260-16-9_osnaui.jpg",
-    media: "https://drive.google.com/file/d/1kz6vH_O2D-gRE3q2zRe6uGO6aFQR7ID3/preview",
-    description_en: `Documentation of the 2025 East Jakarta Student Theatre Festival for one week.`,
-    description_id: `Dokumentasi Festival Teater Pelajar Jakarta Timur 2025 selama satu minggu.`,
-    tools: ["Sony A6000", "DJI Ronin SC 2"],
-    behindTheScenes: "Original Link: https://www.instagram.com/reel/DL1wWO4B409/",
-      featured: false
-  },
-  {
-    id: 16,
-    title: "Theatre Documentation 3",
-    category: "videography",
-    year: "2025",
-    role: "Videographer",
-    thumbnail: "https://res.cloudinary.com/dj5v96fla/image/upload/v1771074859/LCH_3260-16-9_osnaui.jpg",
-    media: "https://drive.google.com/file/d/1hTqdLCgTubYne6Kr1N__jb5V1YnDnlm2/preview",
-    description_en: `Documentation of the 2025 East Jakarta Theatre Festival for one week.`,
-    description_id: `Dokumentasi Festival Teater Jakarta Timur 2025 selama satu minggu.`,
-    tools: ["Canon 750D", "DJI Ronin SC 2"],
-    behindTheScenes: "Original Link: https://www.instagram.com/reel/DOWHJGaAfPO/",
-      featured: false
-  },
-  {
-    id: 17,
-    title: "Theatre Documentation 4",
-    category: "videography",
-    year: "2025",
-    role: "Videographer",
-    thumbnail: "https://res.cloudinary.com/dj5v96fla/image/upload/v1771074859/LCH_3260-16-9_osnaui.jpg",
-    media: "https://drive.google.com/file/d/18rmhqbLDOoaRraXr_A3SCglL8ulQ1Gkp/preview",
-    description_en: `Documentation of the 2025 East Jakarta Theatre Festival for one week.`,
-    description_id: `Dokumentasi Festival Teater Jakarta Timur 2025 selama satu minggu.`,
-    tools: ["Canon 750D", "DJI Ronin SC 2"],
-    behindTheScenes: "Original Link: https://www.instagram.com/reel/DOaaqUYAf0_/",
-      featured: false
-  },
+
   
   // ========== PHOTOGRAPHY ==========
 
 
   {
-    id: 18,
-    title: "Tower in the Woods",
+    id: 16,
+    title: "Bangku Taman BTS",
     category: "photography",
-    year: "2025",
-    role: "Photographer",
-    thumbnail: "https://res.cloudinary.com/dj5v96fla/image/upload/v1771083155/IMG_0044_ir1osx.jpg",
-    media: "https://res.cloudinary.com/dj5v96fla/image/upload/v1771083155/IMG_0044_ir1osx.jpg",
-    description_en: `A shot showing the contrast between a human-made iron tower structure and the lush surrounding nature.`,
-    description_id: `Tangkapan yang memperlihatkan kontras antara struktur menara besi buatan manusia dan rindangnya alam sekitar.`,
-    tools: ["Canon 700D", "Lightroom"],
-    behindTheScenes: "Used mushroom lens to achieve the glowing light effect.",
+    year: "2026",
+    role: "Behind the Scene",
+    thumbnail: "https://res.cloudinary.com/dj5v96fla/image/upload/v1785670682/LID01573_lwo7n7.jpg",
+    media: [
+      "https://res.cloudinary.com/dj5v96fla/image/upload/v1785670682/LID01573_lwo7n7.jpg",
+      "https://res.cloudinary.com/dj5v96fla/image/upload/v1785670680/LID01431_knoz92.jpg",
+      "https://res.cloudinary.com/dj5v96fla/image/upload/v1785670681/LID01463_rihro2.jpg",
+      "https://res.cloudinary.com/dj5v96fla/image/upload/v1785670682/LID01544_t34a8o.jpg",
+      "https://res.cloudinary.com/dj5v96fla/image/upload/v1785670684/LID01875_rquwti.jpg",
+      "https://res.cloudinary.com/dj5v96fla/image/upload/v1785670684/LID01701_ofypfg.jpg",
+      "https://res.cloudinary.com/dj5v96fla/image/upload/v1785670684/LID01687_h2e3lm.jpg",
+      "https://res.cloudinary.com/dj5v96fla/image/upload/v1785670684/LID00976_alfwbu.jpg",
+      "https://res.cloudinary.com/dj5v96fla/image/upload/v1785670681/LID01502_tvhsrf.jpg",
+      "https://res.cloudinary.com/dj5v96fla/image/upload/v1785670689/LID01915_i4wmpt.jpg",
+    ],
+    description_en: `Behind-the-scenes photography from the short film "Bangku Taman". Capturing the raw moments of the production process — from candid crew interactions to technical setups on set.`,
+    description_id: `Foto behind-the-scenes dari proses produksi film pendek "Bangku Taman". Mengabadikan momen-momen autentik di balik layar — dari interaksi kru yang natural hingga setup teknis di lokasi syuting.`,
+    tools: ["Sony A7R V", "Lightroom"],
+    behindTheScenes: null,
       featured: false
   },
   {
-    id: 19,
+    id: 17,
     title: "Natural Canopy",
     category: "photography",
     year: "2025",
     role: "Photographer",
     thumbnail: "https://res.cloudinary.com/dj5v96fla/image/upload/v1771083179/IMG_0039_mwyei3.jpg",
-    media: "https://res.cloudinary.com/dj5v96fla/image/upload/v1771083179/IMG_0039_mwyei3.jpg",
-    description_en: `A natural framing composition of lush foliage against a bright blue sky.`,
-    description_id: `Komposisi framing alami dari rimbunnya dedaunan dengan latar langit biru cerah.`,
+    media: [
+      "https://res.cloudinary.com/dj5v96fla/image/upload/v1771083155/IMG_0044_ir1osx.jpg",
+      "https://res.cloudinary.com/dj5v96fla/image/upload/v1771083179/IMG_0039_mwyei3.jpg",
+    ],
+    description_en: `A nature photography series exploring contrast and natural framing. Featuring a human-made iron tower set against lush forest surroundings, and a natural canopy of foliage framing a bright blue sky.`,
+    description_id: `Serial fotografi alam yang mengeksplorasi kontras dan framing alami. Menampilkan menara besi buatan manusia di tengah alam yang rindang, dan kanopi dedaunan alami yang membingkai langit biru cerah.`,
     tools: ["Canon 700D", "Lightroom"],
     behindTheScenes: "Used mushroom lens to achieve the glowing light effect.",
       featured: false
   },
   {
-    id: 20,
-    title: "Highway Trails",
+    id: 18,
+    title: "Street Light Trails",
     category: "photography",
-    year: "2025",
+    year: "2026",
     role: "Photographer",
-    thumbnail: "https://res.cloudinary.com/dj5v96fla/image/upload/v1771083180/IMG_9181_mtyuwq.jpg",
-    media: "https://res.cloudinary.com/dj5v96fla/image/upload/v1771083180/IMG_9181_mtyuwq.jpg",
-    description_en: `A long exposure experiment capturing vehicle light trails on the highway at night.`,
-    description_id: `Eksperimen long exposure yang menangkap garis cahaya kendaraan di jalan tol pada malam hari.`,
-    tools: ["Canon 700D", "Lightroom"],
+    thumbnail: "https://res.cloudinary.com/dj5v96fla/image/upload/v1771856553/LCH_3280_1_chcv38.jpg",
+    media: [
+      "https://res.cloudinary.com/dj5v96fla/image/upload/v1771083180/IMG_9181_mtyuwq.jpg",
+      "https://res.cloudinary.com/dj5v96fla/image/upload/v1771083237/DSC_3927_hpwm2z.jpg",
+      "https://res.cloudinary.com/dj5v96fla/image/upload/v1771856553/LCH_3280_1_chcv38.jpg",
+      "https://res.cloudinary.com/dj5v96fla/image/upload/v1771856546/LCH_3282_khglu9.jpg",
+    ],
+    description_en: `A light trails photography series capturing the movement of vehicles at night through long exposure. From highways to city streets, each frame conveys the energy and flow of the urban nightscape.`,
+    description_id: `Serial fotografi light trails yang merekam pergerakan kendaraan di malam hari melalui long exposure. Dari jalan tol hingga jalanan kota, setiap frame memancarkan energi dan aliran suasana malam urban.`,
+    tools: ["Canon 700D", "Nikon D3400", "Lightroom"],
     behindTheScenes: null,
       featured: false
   },
   {
-    id: 21,
+    id: 19,
     title: "Vibrant Crunch",
     category: "photography",
     year: "2025",
@@ -398,7 +404,7 @@ Mengonsep pendekatan naratif dan visual secara kreatif, mengarahkan talent dan k
       featured: false
   },
   {
-    id: 22,
+    id: 20,
     title: "Anchored Silence",
     category: "photography",
     year: "2025",
@@ -412,27 +418,19 @@ Mengonsep pendekatan naratif dan visual secara kreatif, mengarahkan talent dan k
       featured: false
   },
   {
-    id: 23,
-    title: "Neon Arteries",
-    category: "photography",
-    year: "2025",
-    role: "Photographer",
-    thumbnail: "https://res.cloudinary.com/dj5v96fla/image/upload/v1771083237/DSC_3927_hpwm2z.jpg",
-    media: "https://res.cloudinary.com/dj5v96fla/image/upload/v1771083237/DSC_3927_hpwm2z.jpg",
-    description_en: `A long exposure shot capturing red vehicle light trails crossing the city streets.`,
-    description_id: `Tangkapan long exposure yang merekam jejak cahaya merah kendaraan melintasi jalanan kota.`,
-    tools: ["Nikon D3400", "Lightroom"],
-    behindTheScenes: null,
-      featured: false
-  },
-  {
-    id: 24,
-    title: "Reunion Documentation 1",
+    id: 21,
+    title: "Reunion Documentation",
     category: "photography",
     year: "2025",
     role: "Photographer",
     thumbnail: "https://res.cloudinary.com/dj5v96fla/image/upload/v1771083709/IMG_0187_dyucvz.jpg",
-    media: "https://res.cloudinary.com/dj5v96fla/image/upload/v1771083709/IMG_0187_dyucvz.jpg",
+    media: [
+      "https://res.cloudinary.com/dj5v96fla/image/upload/v1771083709/IMG_0187_dyucvz.jpg",
+      "https://res.cloudinary.com/dj5v96fla/image/upload/v1771083753/IMG_0028_zmpt7m.jpg",
+      "https://res.cloudinary.com/dj5v96fla/image/upload/v1771083791/IMG_0376_erorpo.jpg",
+      "https://res.cloudinary.com/dj5v96fla/image/upload/v1771083808/IMG_0274_qlreov.jpg",
+      "https://res.cloudinary.com/dj5v96fla/image/upload/v1771083819/IMG_0147_cfqn0s.jpg",
+    ],
     description_en: `Halal bihalal documentation`,
     description_id: `Dokumentasi halal bihalal`,
     tools: ["Canon 700D", "Lightroom"],
@@ -440,63 +438,7 @@ Mengonsep pendekatan naratif dan visual secara kreatif, mengarahkan talent dan k
       featured: false
   },
   {
-    id: 25,
-    title: "Reunion Documentation 2",
-    category: "photography",
-    year: "2025",
-    role: "Photographer",
-    thumbnail: "https://res.cloudinary.com/dj5v96fla/image/upload/v1771083753/IMG_0028_zmpt7m.jpg",
-    media: "https://res.cloudinary.com/dj5v96fla/image/upload/v1771083753/IMG_0028_zmpt7m.jpg",
-    description_en: `Halal bihalal documentation`,
-    description_id: `Dokumentasi halal bihalal`,
-    tools: ["Canon 700D", "Lightroom"],
-    behindTheScenes: null,
-      featured: false
-  },
-  {
-    id: 26,
-    title: "Reunion Documentation 3",
-    category: "photography",
-    year: "2025",
-    role: "Photographer",
-    thumbnail: "https://res.cloudinary.com/dj5v96fla/image/upload/v1771083791/IMG_0376_erorpo.jpg",
-    media: "https://res.cloudinary.com/dj5v96fla/image/upload/v1771083791/IMG_0376_erorpo.jpg",
-    description_en: `Halal bihalal documentation`,
-    description_id: `Dokumentasi halal bihalal`,
-    tools: ["Canon 700D", "Lightroom"],
-    behindTheScenes: null,
-      featured: false
-  },
-  {
-    id: 27,
-    title: "Reunion Documentation 4",
-    category: "photography",
-    year: "2025",
-    role: "Photographer",
-    thumbnail: "https://res.cloudinary.com/dj5v96fla/image/upload/v1771083808/IMG_0274_qlreov.jpg",
-    media: "https://res.cloudinary.com/dj5v96fla/image/upload/v1771083808/IMG_0274_qlreov.jpg",
-    description_en: `Halal bihalal documentation`,
-    description_id: `Dokumentasi halal bihalal`,
-    tools: ["Canon 700D", "Lightroom"],
-    behindTheScenes: null,
-      featured: false
-  },
-  {
-    id: 28,
-    title: "Reunion Documentation 5",
-    category: "photography",
-    year: "2025",
-    role: "Photographer",
-    thumbnail: "https://res.cloudinary.com/dj5v96fla/image/upload/v1771083819/IMG_0147_cfqn0s.jpg",
-    media: "https://res.cloudinary.com/dj5v96fla/image/upload/v1771083819/IMG_0147_cfqn0s.jpg",
-    description_en: `Halal bihalal documentation`,
-    description_id: `Dokumentasi halal bihalal`,
-    tools: ["Canon 700D", "Lightroom"],
-    behindTheScenes: null,
-      featured: false
-  },
-  {
-    id: 29,
+    id: 22,
     title: "Urban Dome",
     category: "photography",
     year: "2025",
@@ -510,13 +452,16 @@ Mengonsep pendekatan naratif dan visual secara kreatif, mengarahkan talent dan k
       featured: false
   },
   {
-    id: 30,
-    title: "Recitation Documentation 1",
+    id: 23,
+    title: "Recitation Documentation",
     category: "photography",
     year: "2025",
     role: "Photographer",
     thumbnail: "https://res.cloudinary.com/dj5v96fla/image/upload/v1771084011/DSC_4334_yvytqj.jpg",
-    media: "https://res.cloudinary.com/dj5v96fla/image/upload/v1771084011/DSC_4334_yvytqj.jpg",
+    media: [
+      "https://res.cloudinary.com/dj5v96fla/image/upload/v1771084011/DSC_4334_yvytqj.jpg",
+      "https://res.cloudinary.com/dj5v96fla/image/upload/v1771083837/DSC_4339_uxhdas.jpg",
+    ],
     description_en: `Recitation documentation`,
     description_id: `Dokumentasi pengajian`,
     tools: ["Canon 700D", "Lightroom"],
@@ -524,55 +469,19 @@ Mengonsep pendekatan naratif dan visual secara kreatif, mengarahkan talent dan k
       featured: false
   },
   {
-    id: 31,
-    title: "Recitation Documentation 2",
-    category: "photography",
-    year: "2025",
-    role: "Photographer",
-    thumbnail: "https://res.cloudinary.com/dj5v96fla/image/upload/v1771083837/DSC_4339_uxhdas.jpg",
-    media: "https://res.cloudinary.com/dj5v96fla/image/upload/v1771083837/DSC_4339_uxhdas.jpg",
-    description_en: `Recitation documentation`,
-    description_id: `Dokumentasi pengajian`,
-    tools: ["Canon 700D", "Lightroom"],
-    behindTheScenes: null,
-      featured: false
-  },
-  {
-    id: 32,
-    title: "Night Trails",
-    category: "photography",
-    year: "2026",
-    role: "Photographer",
-    thumbnail: "https://res.cloudinary.com/dj5v96fla/image/upload/v1771856553/LCH_3280_1_chcv38.jpg",
-    media: "https://res.cloudinary.com/dj5v96fla/image/upload/v1771856553/LCH_3280_1_chcv38.jpg",
-    description_en: `Blue and red light trails cutting through the darkness create a dynamic visual energy along the road.`,
-    description_id: `Garis cahaya biru dan merah yang membelah kegelapan menciptakan energi visual yang dinamis di sepanjang jalan.`,
-    tools: ["Nikon Dd3400", "Lightroom"],
-    behindTheScenes: null,
-      featured: false
-  },
-  {
-    id: 33,
-    title: "Night Trails 2",
-    category: "photography",
-    year: "2026",
-    role: "Photographer",
-    thumbnail: "https://res.cloudinary.com/dj5v96fla/image/upload/v1771856546/LCH_3282_khglu9.jpg",
-    media: "https://res.cloudinary.com/dj5v96fla/image/upload/v1771856546/LCH_3282_khglu9.jpg",
-    description_en: `The consistent flow of vehicle taillights conveys a sense of smooth movement amidst the silence of the night.`,
-    description_id: `Aliran lampu belakang kendaraan yang konsisten memberikan kesan pergerakan yang mulus di tengah sunyinya malam.`,
-    tools: ["Nikon D3400", "Lightroom"],
-    behindTheScenes: null,
-      featured: false
-  },
-  {
-    id: 34,
+    id: 24,
     title: "Traditional Dance",
     category: "photography",
     year: "2026",
     role: "Photographer",
     thumbnail: "https://res.cloudinary.com/dj5v96fla/image/upload/v1779544785/LCH_2929_lknyao.jpg",
-    media: "https://res.cloudinary.com/dj5v96fla/image/upload/v1779544785/LCH_2929_lknyao.jpg",
+    media: [
+      "https://res.cloudinary.com/dj5v96fla/image/upload/v1779544785/LCH_2929_lknyao.jpg",
+      "https://res.cloudinary.com/dj5v96fla/image/upload/v1779545485/LCH3_a1qdb0.jpg",
+      "https://res.cloudinary.com/dj5v96fla/image/upload/v1779545489/LCH2_buai29.jpg",
+      "https://res.cloudinary.com/dj5v96fla/image/upload/v1779545481/LCH1_goaulz.jpg",
+      "https://res.cloudinary.com/dj5v96fla/image/upload/v1779544825/LCH_3126_gw2xfy.jpg",
+    ],
     description_en: `Traditional Dance.`,
     description_id: `Tari Tradisional.`,
     tools: ["Nikon D3400", "Lightroom"],
@@ -580,63 +489,7 @@ Mengonsep pendekatan naratif dan visual secara kreatif, mengarahkan talent dan k
       featured: false
   },
   {
-    id: 35,
-    title: "Traditional Dance 2",
-    category: "photography",
-    year: "2026",
-    role: "Photographer",
-    thumbnail: "https://res.cloudinary.com/dj5v96fla/image/upload/v1779545485/LCH3_a1qdb0.jpg",
-    media: "https://res.cloudinary.com/dj5v96fla/image/upload/v1779545485/LCH3_a1qdb0.jpg",
-    description_en: `Traditional Dance.`,
-    description_id: `Tari Tradisional.`,
-    tools: ["Nikon D3400", "Lightroom"],
-    behindTheScenes: null,
-      featured: false
-  },
-  {
-    id: 36,
-    title: "Traditional Dance 3",
-    category: "photography",
-    year: "2026",
-    role: "Photographer",
-    thumbnail: "https://res.cloudinary.com/dj5v96fla/image/upload/v1779545489/LCH2_buai29.jpg",
-    media: "https://res.cloudinary.com/dj5v96fla/image/upload/v1779545489/LCH2_buai29.jpg",
-    description_en: `Traditional Dance.`,
-    description_id: `Tari Tradisional.`,
-    tools: ["Nikon D3400", "Lightroom"],
-    behindTheScenes: null,
-      featured: false
-  },
-  {
-    id: 37,
-    title: "Traditional Dance 4",
-    category: "photography",
-    year: "2026",
-    role: "Photographer",
-    thumbnail: "https://res.cloudinary.com/dj5v96fla/image/upload/v1779545481/LCH1_goaulz.jpg",
-    media: "https://res.cloudinary.com/dj5v96fla/image/upload/v1779545481/LCH1_goaulz.jpg",
-    description_en: `Traditional Dance.`,
-    description_id: `Tari Tradisional.`,
-    tools: ["Nikon D3400", "Lightroom"],
-    behindTheScenes: null,
-      featured: false
-  },
-  {
-    id: 38,
-    title: "Traditional Dance 5",
-    category: "photography",
-    year: "2026",
-    role: "Photographer",
-    thumbnail: "https://res.cloudinary.com/dj5v96fla/image/upload/v1779544825/LCH_3126_gw2xfy.jpg",
-    media: "https://res.cloudinary.com/dj5v96fla/image/upload/v1779544825/LCH_3126_gw2xfy.jpg",
-    description_en: `Traditional Dance.`,
-    description_id: `Tari Tradisional.`,
-    tools: ["Nikon D3400", "Lightroom"],
-    behindTheScenes: null,
-      featured: false
-  },
-  {
-    id: 39,
+    id: 25,
     title: "Morning At Dieng",
     category: "photography",
     year: "2026",
@@ -653,7 +506,7 @@ Mengonsep pendekatan naratif dan visual secara kreatif, mengarahkan talent dan k
   // ========== DESIGN ==========
 
   {
-    id: 34,
+    id: 26,
     title: "Letclame Logo 1",
     category: "design",
     year: "2025",
@@ -667,7 +520,7 @@ Mengonsep pendekatan naratif dan visual secara kreatif, mengarahkan talent dan k
       featured: false
   },
   {
-    id: 35,
+    id: 27,
     title: "Letclame Logo 2",
     category: "design",
     year: "2025",
@@ -681,7 +534,7 @@ Mengonsep pendekatan naratif dan visual secara kreatif, mengarahkan talent dan k
       featured: false
   },
   {
-    id: 36,
+    id: 28,
     title: "Festival Logo",
     category: "design",
     year: "2025",
@@ -695,7 +548,7 @@ Mengonsep pendekatan naratif dan visual secara kreatif, mengarahkan talent dan k
       featured: false
   },
   {
-    id: 37,
+    id: 29,
     title: "Company Logo",
     category: "design",
     year: "2025",
@@ -709,7 +562,7 @@ Mengonsep pendekatan naratif dan visual secara kreatif, mengarahkan talent dan k
       featured: false
   },
   {
-    id: 38,
+    id: 30,
     title: "Company Logo 2",
     category: "design",
     year: "2025",
@@ -723,7 +576,7 @@ Mengonsep pendekatan naratif dan visual secara kreatif, mengarahkan talent dan k
       featured: false
   },
   {
-    id: 39,
+    id: 31,
     title: "Company Sticker",
     category: "design",
     year: "2025",
@@ -737,7 +590,7 @@ Mengonsep pendekatan naratif dan visual secara kreatif, mengarahkan talent dan k
       featured: false
   },
   {
-    id: 40,
+    id: 32,
     title: "Almamater Prototype",
     category: "design",
     year: "2025",
@@ -751,7 +604,7 @@ Mengonsep pendekatan naratif dan visual secara kreatif, mengarahkan talent dan k
       featured: false
   },
   {
-    id: 41,
+    id: 33,
     title: "Festival Poster",
     category: "design",
     year: "2025",
@@ -765,7 +618,7 @@ Mengonsep pendekatan naratif dan visual secara kreatif, mengarahkan talent dan k
       featured: false
   },
   {
-    id: 42,
+    id: 34,
     title: "Independence Day Poster",
     category: "design",
     year: "2023",
@@ -779,7 +632,7 @@ Mengonsep pendekatan naratif dan visual secara kreatif, mengarahkan talent dan k
       featured: false
   },
   {
-    id: 43,
+    id: 35,
     title: "Doc Puzzle Feeds",
     category: "design",
     year: "2024",
@@ -793,7 +646,7 @@ Mengonsep pendekatan naratif dan visual secara kreatif, mengarahkan talent dan k
       featured: false
   },
   {
-    id: 44,
+    id: 36,
     title: "Doc Puzzle Feeds 2",
     category: "design",
     year: "2024",
@@ -807,7 +660,7 @@ Mengonsep pendekatan naratif dan visual secara kreatif, mengarahkan talent dan k
       featured: false
   },
   {
-    id: 45,
+    id: 37,
     title: "Doc Puzzle Feeds 3",
     category: "design",
     year: "2024",
@@ -821,7 +674,7 @@ Mengonsep pendekatan naratif dan visual secara kreatif, mengarahkan talent dan k
       featured: false
   },
   {
-    id: 46,
+    id: 38,
     title: "Pilkatos Puzzle Feeds",
     category: "design",
     year: "2024",
@@ -835,7 +688,7 @@ Mengonsep pendekatan naratif dan visual secara kreatif, mengarahkan talent dan k
       featured: false
   },
   {
-    id: 47,
+    id: 39,
     title: "OSIS ID Card",
     category: "design",
     year: "2024",
@@ -849,7 +702,7 @@ Mengonsep pendekatan naratif dan visual secara kreatif, mengarahkan talent dan k
       featured: false
   },
   {
-    id: 49,
+    id: 40,
     title: "OSIS Structure Feeds",
     category: "design",
     year: "2025",
@@ -863,7 +716,7 @@ Mengonsep pendekatan naratif dan visual secara kreatif, mengarahkan talent dan k
       featured: false
   },
   {
-    id: 50,
+    id: 41,
     title: "Recruitment Poster",
     category: "design",
     year: "2025",
@@ -876,6 +729,9 @@ Mengonsep pendekatan naratif dan visual secara kreatif, mengarahkan talent dan k
     behindTheScenes: null,
       featured: false
   },
+
+
+
 //   {
 //     id: 7,
 //     title: "Minimalist UI",

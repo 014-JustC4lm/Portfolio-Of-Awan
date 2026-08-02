@@ -34,7 +34,7 @@ export const softwareSkills = [
     color: 'currentColor' // Inherits from parent, making it black in light mode and white in dark mode.
   },
   { 
-    name: 'DaVinci Resolve (Basic)', 
+    name: 'DaVinci Resolve', 
     icon: SiDavinciresolve, 
     color: '#FF5C5C' // Approximate color
   }

@@ -51,5 +51,10 @@ export const galleryImages = [
     src: "https://res.cloudinary.com/dj5v96fla/image/upload/v1771859500/awan-avcomm_laaekw.jpg",
     alt: "Portrait with Sony A7 IV and DJI RS 3"
   },
+  {
+    id: 11,
+    src: "https://res.cloudinary.com/dj5v96fla/image/upload/v1785664424/BangkuTamanBTS_h6cnyy.jpg",
+    alt: "Behind the scene of Bangku Taman"
+  },
   // Tambahkan lebih banyak gambar sesuai kebutuhan
 ];
